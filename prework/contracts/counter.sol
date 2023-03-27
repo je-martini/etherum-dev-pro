@@ -9,6 +9,10 @@ contract Counter {
         counter = _counter;        
     }
 
+    function setup_counter(uint number) public {
+        counter = number;
+    }
+
     function get_counter() public view returns(uint) {
         return counter;
     }
